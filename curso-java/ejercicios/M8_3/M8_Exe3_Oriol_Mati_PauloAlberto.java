@@ -40,15 +40,7 @@ public class M8_Exe3_Oriol_Mati_PauloAlberto {
         int option;
 
         do {
-            
-            System.out.println(" chosse onde option : \n"
-                    + "1. Create Customer \n"
-                    + "2. Remove Customer \n"
-                    + "3. Create a Flight \n"
-                    + "4. Change Flight \n"
-                    + "5. Compensar Co2 de un vuelo de un cliente \n"
-                    + "6. Calcular la huella de carbono promedio de todos los clientes. \n"
-                    + "0. quit");
+            menu();
             option = input.nextInt();
             switch (option) {
                 case 1:
@@ -92,6 +84,17 @@ public class M8_Exe3_Oriol_Mati_PauloAlberto {
             System.out.println(response);
         } while (option != 0);
     }
+
+     public static void menu(){
+        System.out.println(" chosse onde option : \n"
+                    + "1. Create Customer \n"
+                    + "2. Remove Customer \n"
+                    + "3. Create a Flight \n"
+                    + "4. Change Flight \n"
+                    + "5. Compensar Co2 de un vuelo de un cliente \n"
+                    + "6. Calcular la huella de carbono promedio de todos los clientes. \n"
+                    + "0. quit");
+     }
     // create customer
     public static String createCustomer(String dni,  String nacionalidad) {
         //String response;
